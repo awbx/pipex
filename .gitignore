@@ -36,5 +36,9 @@
 *.exe
 *.out
 *.app
+pipex
+
+# ignore debug files
+*.dSYM
 
 # End of https://www.toptal.com/developers/gitignore/api/c++
