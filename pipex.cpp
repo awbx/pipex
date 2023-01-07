@@ -1,6 +1,5 @@
 #include "pipex.hpp"
 
-#include <readline/readline.h>
 
 int heredoc(char *delim) {
   int         hfd[2];
@@ -20,9 +19,9 @@ int heredoc(char *delim) {
   return (close(hfd[WRITE_END]), hfd[READ_END]);
 }
 
-int main(int ac, char **av) {
+int main(int ac, char **av) 
+{
   if (ac >= 5) {
-    int io[2];
 
 #if !DEBUG
     int infile;
